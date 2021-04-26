@@ -1,18 +1,22 @@
+/* reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* font-family */
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* container width and margin */
 .container {
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
 }
 
+/* clearfix for floating content */
 .clearfix::after {
     content: "";
     display: table;
@@ -23,18 +27,21 @@ body {
     float: left;
 }
 
+/* width and padding for every product */
 .product {
-    padding: 10px 10px 30px 10px;
+    padding: 10px 10px;
+    width: 33.33%;
 }
 
+/* product images properties */
 .product-image {
-    width: 300px;
-    height: 433px;
+    height: 420px;
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
+/* wishlis heart with and without hovering */
 .product-wishlist {
     font-size: 30px;
     background-color: white;
@@ -47,6 +54,11 @@ body {
     top: 5px;
 }
 
+.product-wishlist:hover {
+    color: red;
+}
+
+/* product labels properties */
 .product-labels {
     position: absolute;
     bottom: 10px;
@@ -58,7 +70,6 @@ body {
     background-color: #d73c4a;
     padding: 5px;
     vertical-align: middle;
-    
 }
 
 .product-label {
@@ -67,25 +78,18 @@ body {
     vertical-align: middle;
 }
 
+/* product info layout */
 .product-info {
     height: 70px;
     padding-top: 10px;
     margin-bottom: 15px;
 }
 
+/* special layout for product info */
 .special {
     background-color: #75ac51;
     font-size: 15px;
     padding: 15px 10px 15px 10px;
-}
-
-.product-title {
-    font-weight: bold;
-    padding-bottom: 5px;
-}
-
-.product-mood {
-    vertical-align: top;
 }
 
 .product-brand {
@@ -94,7 +98,6 @@ body {
 
 .product-specifications {
     font-size: 13px;
-    width: 300px;
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
@@ -107,10 +110,21 @@ body {
     margin-top: 10px;
 }
 
+/* low price text color */
 .low-price {
     color: #d73c4a;
 }
 
+.product-title {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.product-mood {
+    vertical-align: top;
+}
+
+/* product images with and without hovering */
 .image-1 {
     background-image: url('../img/1.webp');
 }
@@ -159,6 +173,7 @@ body {
     background-image: url('../img/6-hover.webp');
 }
 
+/* hiding of labels not displayed */
 .image-2 .product-label {
     display: none;
 }
