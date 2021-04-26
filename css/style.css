@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .container {
     max-width: 1000px;
     margin: auto;
@@ -65,34 +69,94 @@
 
 .product-info {
     height: 70px;
+    padding-top: 10px;
+    margin-bottom: 15px;
 }
 
 .special {
     background-color: #75ac51;
+    font-size: 15px;
+    padding: 15px 10px 15px 10px;
+}
+
+.product-title {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.product-mood {
+    vertical-align: top;
+}
+
+.product-brand {
+    font-size: 12px;
+}
+
+.product-specifications {
+    font-size: 13px;
+    width: 300px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 3px;
+}
+
+.product-price {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.low-price {
+    color: #d73c4a;
 }
 
 .image-1 {
     background-image: url('../img/1.webp');
 }
 
+.image-1:hover {
+    background-image: url('../img/1-hover.webp');
+}
+
 .image-2 {
     background-image: url('../img/2.webp');
+}
+
+.image-2:hover {
+    background-image: url('../img/2-hover.webp');
 }
 
 .image-3 {
     background-image: url('../img/3.webp');
 }
 
+.image-3:hover {
+    background-image: url('../img/3-hover.webp');
+}
+
 .image-4 {
     background-image: url('../img/4.webp');
+}
+
+.image-4:hover {
+    background-image: url('../img/4-hover.webp');
 }
 
 .image-5 {
     background-image: url('../img/5.webp');
 }
 
+.image-5:hover {
+    background-image: url('../img/5-hover.webp');
+}
+
 .image-6 {
     background-image: url('../img/6.webp');
+}
+
+.image-6:hover {
+    background-image: url('../img/6-hover.webp');
 }
 
 .image-2 .product-label {
